@@ -532,7 +532,7 @@
       margin-left: 93px;      
  }
  .subscribe{
-      display: inline-flex;
+      display: flex;
  }
 .title-subscribe{
      margin-bottom: 20px;
@@ -545,26 +545,49 @@
     text-transform: uppercase;
 }
 .subscribe input{
-     width: 358px;
+     width: 340px;
      height: 50px;
      margin-bottom: 94px;
+     padding-left: 28px;
 }
   .btn-subscribe{
      font-size: 16px;
       line-height: 1.875;
       letter-spacing: 0.06em;
-      text-align: center;
+      text-align: justify;
       cursor: pointer;
       border-radius: 4px;
       background-color: var(--color-button-logo);
       color: var(--white-color);
-      padding: 10px 55px;
+       padding-left: 28px;
+       margin-left: 12px;
+    
       width: 200px;
-      height: 50px;
+      height: 50px;      
       
+ }
+ /* .btn-subscribe::after{
+     content: "";
+       display: inline-flex; 
+       position: absolute; 
       
+      width: 24px;
+      height: 24px;
+      margin-left: 10px;
+      background-image: url("../images/icon/sprite.svg#icon-send");
+      background-size: contain;
 
- } 
+ } */
+ .icon-send{
+     display: inline-flex; 
+     align-items: center;
+     width: 24px;
+     height: 24px;
+     margin-left: 10px;
+             
+     
+ }
+
   /* Выбор проектов */
   
   .btn{
