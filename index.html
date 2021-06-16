@@ -418,19 +418,31 @@
         <use href="./images/icon/sprite.svg#icon-close"></use>
       </svg>    
        </button>
-        <form>
+        <form class="form-modal">
+          <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+          <div class="form-group">
          <label for="name">Имя</label>
-         <input type="text" name="name-user" id="name">
-         <br>
+         <input type="text" name="name-user" id="name" />
+         </div>
+
+         <div class="form-group">
          <label for="phone">Телефон</label>
-         <input type="tel" name="phone" id="phone">
-         <br>
+         <input type="tel" name="phone" id="phone" />
+         </div>
+
+         <div class="form-group">
          <label for="mail">Почта</label>
-         <input type="email" name="mail" id="mail">
-         <br>
-         <label for="comment">Коментарий</label>
+         <input type="email" name="mail" id="mail" />
+         </div>
+
+         <div class="form-comment">
+         <label for="comment">Комментарий</label>
          <textarea name="comment" id="comment" rows="10"></textarea>
-         <br>
+         </div>     
+         <div class="form-polisy">
+         <input type="checkbox" name="policy" id="polisy" />
+         <label for="polisy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+         </div>   
          <button type="submit">Отправить</button>
        </form> 
    </div>
