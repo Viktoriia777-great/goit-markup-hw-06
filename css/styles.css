@@ -566,19 +566,20 @@
       height: 50px;      
       
  }
- /* .btn-subscribe::after{
+  /* .btn-subscribe::after{
      content: "";
        display: inline-flex; 
-       position: absolute; 
+      position: absolute;  
       
       width: 24px;
       height: 24px;
       margin-left: 10px;
-      background-image: url("../images/icon/sprite.svg#icon-send");
+      background-image: url("../images/symbol-defs.svg");
       background-size: contain;
+      background-color: black;
 
- } */
- .icon-send{
+ }  */
+  .icon-send{
      display: inline-flex; 
      align-items: center;
      width: 24px;
@@ -586,7 +587,7 @@
      margin-left: 10px;
              
      
- }
+ } 
 
   /* Выбор проектов */
   
