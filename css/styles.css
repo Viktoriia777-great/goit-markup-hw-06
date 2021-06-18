@@ -551,6 +551,7 @@
      margin-bottom: 94px;
      padding-left: 28px;
 }
+
   .btn-subscribe{
      font-size: 16px;
       line-height: 1.875;
@@ -872,3 +873,28 @@
   .contract{
        display: block;
   }
+  .form-group{
+       position: relative;
+  }
+    
+   .modal-icon{
+      position: absolute; 
+       width: 18px;
+       height: 18px;
+       fill: #212121;
+       top: 50%;
+       left: 55px;
+       transform: translateY(-50%);
+       transition: fill var(--color-button-logo);
+       
+      
+      
+  } 
+  .form-input:focus + .modal-icon{
+       fill: var(--color-button-logo);
+             
+  }
+  .form-input:focus{
+       border: 2px solid var(--color-button-logo);
+  }
+  

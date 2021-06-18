@@ -410,15 +410,16 @@
           <div> 
            <section class="footer-subscribe">
            <h3 class="title-subscribe">Подпишитесь на рассылку</h3>
-           <div class="subscribe">
+           <!-- <div class="subscribe"> -->
              <form>
-                <label for="emai"></label> 
-               <input type="email" name="email" id="email" placeholder="E-mail">
+                <label class="subscribe">
+               <input type="email" name="email" class="subscribe-email" placeholder="E-mail">
                <button type="submit" class="btn-subscribe">Подписаться
                  <svg class="icon-send">
                   <use href="./images/icon/sprite.svg#icon-send"></use>
                 </svg> 
                </button>
+              </label> 
              </form>
            </div>
           </section>
@@ -439,10 +440,15 @@
       </svg>    
        </button>
         <form class="form-modal">
-          <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+          <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
           <div class="form-group">
-         <label for="name">Имя</label>
-         <input type="text" name="name-user" id="name" />
+            <label for="name" class="modal-label">Имя</label>
+            <input type="text" name="name-user" id="name" class="form-input"/>
+            <svg class="modal-icon">
+              <use href="./images/icon/sprite.svg#icon-person"></use>
+            </svg>  
+            
+                           
          </div>
 
          <div class="form-group">
