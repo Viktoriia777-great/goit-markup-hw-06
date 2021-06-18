@@ -405,12 +405,12 @@
             </a>
              </li>
            </ul>
-         </section>
-         </div>
-          <div> 
+           </section>
+           </div>
+           <div> 
            <section class="footer-subscribe">
-           <h3 class="title-subscribe">Подпишитесь на рассылку</h3>
-           <!-- <div class="subscribe"> -->
+             <h3 class="title-subscribe">Подпишитесь на рассылку</h3>
+              <div class="subscribe"> 
              <form>
                 <label class="subscribe">
                <input type="email" name="email" class="subscribe-email" placeholder="E-mail">
@@ -421,11 +421,11 @@
                </button>
               </label> 
              </form>
+             </div>
+            </section>
            </div>
-          </section>
-         </div>
 
-      </div>                
+         </div>                
    </footer>
       
 
@@ -446,24 +446,28 @@
             <input type="text" name="name-user" id="name" class="form-input"/>
             <svg class="modal-icon">
               <use href="./images/icon/sprite.svg#icon-person"></use>
-            </svg>  
-            
-                           
+            </svg>                                         
          </div>
 
          <div class="form-group">
-         <label for="phone">Телефон</label>
-         <input type="tel" name="phone" id="phone" />
+         <label for="phone"class="modal-label" >Телефон</label>
+         <input type="tel" name="phone" id="phone" class="form-input" />
+         <svg class="modal-icon">
+          <use href="./images/icon/sprite.svg#icon-phone"></use>
+        </svg> 
          </div>
 
          <div class="form-group">
-         <label for="mail">Почта</label>
-         <input type="email" name="mail" id="mail" />
+         <label for="mail" class="modal-label">Почта</label>
+         <input type="email" name="mail" id="mail" class="form-input"/>
+         <svg class="modal-icon">
+          <use href="./images/icon/sprite.svg#icon-email_black"></use>
+        </svg> 
          </div>
 
          <div class="form-comment">
-         <label for="comment">Комментарий</label>
-         <textarea name="comment" id="comment"></textarea>
+         <label for="comment" class="modal-label">Комментарий</label>
+         <textarea name="comment" id="comment" class="form-textarea"></textarea>
          </div>     
           <div class="form-polisy">        
          <label class="contract" ><input type="checkbox" class="checkbox" name="policy"  />
