@@ -855,7 +855,8 @@
   }
   .checkbox:checked +.icon-check{
        background-image: url("/images/icon/icon\ check.svg");
-       background-color: var(--color-button-logo);      
+       background-color: var(--color-button-logo);   
+       fill: var(--white-color);   
   } 
   .contract{
        display: block;
