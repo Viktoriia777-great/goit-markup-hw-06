@@ -848,6 +848,7 @@
        height: 15px; 
       border: 1px solid var(--main-color-headers);
       margin-right: 9px;
+      fill: var(--white-color);
       
       
            
