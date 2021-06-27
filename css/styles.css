@@ -10,6 +10,7 @@
   --card-content-border:  #EEEEEE;
   --company-social-color: #AFB1B8;
   --box-shadow-btn: rgba(0, 0, 0, 0.15);
+  --border-bottom-header: #ECECEC;
       }       
   
  .html {
@@ -23,7 +24,6 @@
       padding: 0;
       list-style: none;      
  }
-
  /* свойства контейнера */
  .conteiner{  
       box-sizing: border-box;      
@@ -32,7 +32,6 @@
       padding: 0 15px;
        /* outline: 2px solid tomato ;    */
  }
-
  /* свойства body */
  body { 
       
@@ -41,7 +40,6 @@
       background-color: var(--white-color);
       color: var(--main-text-color);
  } 
-
  /* свойства для все ссылок */
  a{
      color:inherit;
@@ -62,22 +60,19 @@
       color: var(--main-color-headers);
       transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
-
  /* свойства картинок */
  img{
       display: block;
       max-width: 100%;
       height: auto;
- }
- 
+ } 
  /* навигация */
    .sait-nav {  
       display: flex;
        align-items: center;                           
- } 
-  
+ }   
  .header{
-     border-bottom: 1px solid #ECECEC;
+     border-bottom: 1px solid var(--border-bottom-header);
  }  
  .header .conteiner{
       display: flex;
@@ -88,6 +83,20 @@
        align-items: center;      
        margin-left: 93px;
  }
+ /* Logo */ 
+ .sait-nav__logo{
+     font-family: Raleway;
+     font-weight: bold;
+     font-size: 26px;
+     line-height: 1.192;
+     color: var(--main-color-headers);
+     text-decoration: none;
+     color: var(color-studio); 
+     width: 145px;     
+}
+.sait-nav__logo--web{
+     color: var(--color-button-logo);
+} 
  .sait-link li:not(:last-child){
       margin-right: 50px;
  }
@@ -106,19 +115,15 @@
      border-radius: 2px;
       opacity: 1;  
      transition:  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
- }
- 
+ } 
     .active:hover::after{      
         opacity: 1; 
        background-color: var(--color-button-logo);
-
  }  
  .sait-contacts{
       display: flex;
       align-items: center;     
-       margin-left: auto; 
-      
+       margin-left: auto;     
  }
   .sait-contacts li:not(:last-child){
       margin-right: 30px; } 
@@ -152,24 +157,7 @@
  .link:hover, 
  .link:focus{
      color: var(--color-button-logo);
- } 
-  
- /* Logo */ 
- .logo{
-      font-family: Raleway;
-      font-weight: bold;
-      font-size: 26px;
-      line-height: 1.192;
-      color: var(--main-color-headers);
-      text-decoration: none;
-      color: var(color-studio); 
-      width: 145px;     
- }
-
- .logo-web{
-      color: var(--color-button-logo);
- } 
-
+ }   
  /* Hero section class="hero"*/
       
   .hero{       
