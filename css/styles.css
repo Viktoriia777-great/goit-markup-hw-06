@@ -220,11 +220,7 @@
      background: #F5F4FA;
       border-radius: 4px;
       margin-bottom: 30px;
-}
- .feature .content{
-     display: flex; 
-     justify-content: space-between;
- }
+} 
  .feature__columns li:not(:last-child){
       margin-right: 30px;
  }  
@@ -247,18 +243,17 @@
       line-height: 1.714; 
       letter-spacing: 0.03em; 
  }
-
  /* Чем занимаемся */
-
+ .work{
+     background: var(--feature-portfolio-work-bg); 
+     padding-bottom: 94px; 
+     padding-top: 94px; 
+}
   .box-img{
      display: flex;
      justify-content: space-between;
  } 
- .work{
-       background: var(--feature-portfolio-work-bg); 
-       padding-bottom: 94px; 
-       padding-top: 94px; 
- }
+ 
  .box-case{
      position: relative; 
  }
