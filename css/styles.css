@@ -78,7 +78,7 @@
       display: flex;
       align-items: center;
  }
-  .sait-link{
+  .sait-nav__navigation{
        display: flex; 
        align-items: center;      
        margin-left: 93px;
@@ -97,7 +97,7 @@
 .sait-nav__logo--web{
      color: var(--color-button-logo);
 } 
- .sait-link li:not(:last-child){
+ .sait-nav__navigation li:not(:last-child){
       margin-right: 50px;
  }
  .active {
