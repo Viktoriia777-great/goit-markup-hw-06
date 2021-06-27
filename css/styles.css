@@ -19,6 +19,7 @@
   --subscribe-email-shadow: rgba(0, 0, 0, 0.15) ;
   --gradient-hero1: rgba(48, 58, 47, 0.4);
   --gradient-hero2: rgba(47, 48, 58, 0.4);
+  --client-list-link: #AFB1B8;
       }       
   
  .html {
@@ -361,8 +362,7 @@
  }  
 
  /* Постоянные клиенты */
-  .client{
-       
+  .client{       
       padding-top: 94px;
       padding-bottom: 94px; } 
   
@@ -389,7 +389,8 @@
       fill: var(--company-social-color);
       width: 170px;
       height: 92px;
-      border: 1px solid #AFB1B8;
+      border: 1px solid var(--client-list-link);
+      outline: none;
       transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
     .client-list__company:not(:last-child){
