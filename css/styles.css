@@ -201,22 +201,17 @@
       border-radius: 4px;
       border: none;
       cursor: pointer;
- }  
- 
+ }   
  /* особенности  section class="feature-group"*/
   
- .feature-group{
+ .feature{
       padding-top: 94px;
  }
- .feature-columns{
-     display: flex; 
-     justify-content: space-between; 
- } 
- .group{
+ .group__icon{
      width: 70px;
      height: 70px;
 }
- .gpoup-icon{
+ .gpoup{
      display: inline-flex; 
      justify-content: center;
      align-items: center; 
@@ -230,16 +225,13 @@
      display: flex; 
      justify-content: space-between;
  }
- .columns li:not(:last-child){
+ .feature__columns li:not(:last-child){
       margin-right: 30px;
- }
-  .feature ul{
-      display: flex;      
- }
- .columns{
+ }  
+ .feature__columns{
      display: flex;
  }
- .feature-title{
+ .feature__title{
       font-weight: bold;
       font-size: 14px;
       line-height: 1.172;
@@ -248,7 +240,7 @@
       color: var(--main-color-headers);
       margin-bottom: 10px;
  }
- .feature-text{
+ .feature__text{
       width: 270px;
       font-weight: normal;
       font-size: 14px;
