@@ -88,17 +88,19 @@
        margin-left: 93px;
  }
  /* Logo */ 
- .sait-nav__logo{
+ .sait-nav__logo,
+ .footer-nav__logo{
      font-family: Raleway;
      font-weight: bold;
      font-size: 26px;
      line-height: 1.192;
      color: var(--main-color-headers);
      text-decoration: none;
-     color: var(color-studio); 
+     color: var(--color-studio); 
      width: 145px;     
 }
-.sait-nav__logo--web{
+.sait-nav__logo--web,
+.footer-nav__logo--web{
      color: var(--color-button-logo);
 } 
  .sait-nav__navigation li:not(:last-child){
@@ -400,9 +402,12 @@
  .footer{
      background: var(--hero-footer-background); 
  }
+ .footer-nav__logo{
+     color: var(--white-color); 
+ }
   .footer-nav{
       display: flex;
-     justify-content: center;
+      flex-direction: column;
       width: 231px; 
       margin-right: 70px;
  } 
@@ -450,33 +455,33 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }  
  .footer .logo{
-   color: var(--white-color);      
+   color: var(--white-color);        
  }  
- .footer .mail{
+ .footer-nav__mail{
      font-weight: normal;
       font-size: 14px;
       line-height: 1.714;
       letter-spacing: 0.03em;
       color:  var(--footer-phone-mail);     
  }
- .footer .phone{
+ .footer-nav__phone{
       font-weight: normal;
       font-size: 14px;
       line-height: 1.714;
       letter-spacing: 0.03em;
       color:  var(--footer-phone-mail);       
  }  
- .address{
+.footer-nav__address{
       margin-top: 20px;
- }
- .contacts {  
+ }  
+ .footer-nav__contacts {  
       font-weight: normal;
       font-size: 14px;
       line-height: 1.714;     
       letter-spacing: 0.03em; 
-      color: var(--white-color);       
+      color: var(--white-color);         
  }
- .footer-contacts li{
+ .footer-nav__list{
  margin-top: 9px;
  }
  .footer .link:hover,
