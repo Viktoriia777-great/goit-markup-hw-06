@@ -15,6 +15,10 @@
   --team-scorecard-box-shadow1: rgba(0, 0, 0, 0.12);
   --team-scorecard-box-shadow2: rgba(0, 0, 0, 0.14);
   --team-scorecard-box-shadow3: rgba(0, 0, 0, 0.2);
+  --subscribe-email-border: rgba(255, 255, 255, 0.3);
+  --subscribe-email-shadow: rgba(0, 0, 0, 0.15) ;
+  --gradient-hero1: rgba(48, 58, 47, 0.4);
+  --gradient-hero2: rgba(47, 48, 58, 0.4);
       }       
   
  .html {
@@ -64,6 +68,10 @@
       color: var(--main-color-headers);
       transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
+ .link:hover, 
+ .link:focus{
+     color: var(--color-button-logo);
+ }   
  /* свойства картинок */
  img{
       display: block;
@@ -88,15 +96,15 @@
        margin-left: 93px;
  }
  /* Logo */ 
- .sait-nav__logo,
- .footer-nav__logo{
+ .sait-nav__logo
+ {
      font-family: Raleway;
      font-weight: bold;
      font-size: 26px;
      line-height: 1.192;
      color: var(--main-color-headers);
      text-decoration: none;
-     color: var(--color-studio); 
+     color: #0000; 
      width: 145px;     
 }
 .sait-nav__logo--web,
@@ -160,12 +168,9 @@
  .sait-nav__icon:focus{
     fill: var(--color-button-logo) ;          
  }  
- .link:hover, 
- .link:focus{
-     color: var(--color-button-logo);
- }   
+ 
  /* Hero section class="hero"*/     
-  .hero{       
+  .hero{ 
       background-size: cover;     
       padding-bottom: 200px;
       padding-top: 200px;  
@@ -173,10 +178,10 @@
       max-height: 600px;
       margin-left: auto;
       margin-right: auto;
-      background-image:linear-gradient(to right, rgba(48, 58, 47, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+      background-image:linear-gradient(to right, var(--gradient-hero1),var(--gradient-hero2)), url(../images/hero.jpg);
        background-color: var(--hero-footer-background);
  }         
- .hero__title{  
+ .hero__title{ 
       font-weight: 900;
       font-size: 44px;
       line-height: 1.363;
@@ -189,7 +194,7 @@
       margin-bottom: 30px;                     
  }
  /* кнопка Заказать услугу */
- .hero__but{      
+ .hero__but{ 
       margin: 0 auto;
       font-family: Roboto;
       font-style: normal;
@@ -483,23 +488,19 @@
  }
  .footer-nav__list{
  margin-top: 9px;
- }
- .footer .link:hover,
- .footer .link:focus{
-      color: var(--color-button-logo);
- }
- .footer-subscribe{
+ } 
+ .subscribe{
      display: flex;
      justify-content: center; 
      align-items: center;
       flex-direction: column;
       margin-left: 93px;      
  }
- .subscribe{
+ .subscribe__label{
       display: flex;
       justify-content: space-between;     
  }
-.title-subscribe{
+.subscribe__title{
      margin-bottom: 20px;
      text-align: left;
     align-self: start;
@@ -509,7 +510,7 @@
     color: var(--white-color);
     text-transform: uppercase;
 }
-.subscribe-email{
+.subscribe__email{
      display: flex;
      width: 358px;
      height: 50px;
@@ -517,11 +518,11 @@
      padding-left: 16px;
      background-color: #2F303A;
      outline: none;
-     border: 1px solid rgba(255, 255, 255, 0.3);
-     box-shadow: rgba(0, 0, 0, 0.15) ;
+     border: 1px solid var(--subscribe-email-border);
+     box-shadow: var(--subscribe-email-shadow);
      border-radius: 4px;
 }
-  .btn-subscribe{
+  .subscribe__btn{
       display: flex;
       align-items: center;
       font-size: 16px;
@@ -537,10 +538,9 @@
       padding-left: 28px;
       margin-left: 12px;    
       width: 200px;
-      height: 50px;      
-      
+      height: 50px;     
  }  
-  .icon-send{
+  .subscribe__icon{
      display: inline-flex; 
      align-items: center;
      width: 24px;
