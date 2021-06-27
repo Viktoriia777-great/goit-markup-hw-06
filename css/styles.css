@@ -254,7 +254,8 @@
      padding-top: 94px; 
 }
 .work__title,
-.team__title{
+.team__title,
+.client__title{
      font-weight: bold;
      font-size: 36px;
      line-height: 1.167;
@@ -358,7 +359,7 @@
       padding-top: 94px;
       padding-bottom: 94px; } 
   
- .company{
+ .client-list__icon{
      width: 106px;
      height: 60px;
      align-items: center;
@@ -369,12 +370,12 @@
       justify-content: space-between;
       align-items: center;
  }
- .client-company:hover,
- .client-company:focus{
+ .client-list__link:hover,
+ .client-list__link:focus{
      fill: var(--color-button-logo);
      border: 1px solid var(--color-button-logo);
  }
- .client-company{
+ .client-list__link{
        display: flex;
       justify-content: center;
       align-items: center; 
@@ -384,7 +385,7 @@
       border: 1px solid #AFB1B8;
       transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
-    .company-list:not(:last-child){
+    .client-list__company:not(:last-child){
       margin-right: 30px; 
  }
         
