@@ -120,16 +120,16 @@
         opacity: 1; 
        background-color: var(--color-button-logo);
  }  
- .sait-contacts{
+ .sait-nav__contacts{
       display: flex;
       align-items: center;     
        margin-left: auto;     
  }
-  .sait-contacts li:not(:last-child){
+  .sait-nav__contacts li:not(:last-child){
       margin-right: 30px; } 
  
- .sait-contacts .mail,
- .sait-contacts .phone{
+ .sait-nav__mail,
+ .sait-nav__phone{
       display: flex;
       align-items: center;      
       font-weight: 500;
