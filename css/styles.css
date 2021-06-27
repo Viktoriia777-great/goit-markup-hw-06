@@ -158,8 +158,7 @@
  .link:focus{
      color: var(--color-button-logo);
  }   
- /* Hero section class="hero"*/
-      
+ /* Hero section class="hero"*/     
   .hero{       
       background-size: cover;     
       padding-bottom: 200px;
@@ -170,9 +169,8 @@
       margin-right: auto;
       background-image:linear-gradient(to right, rgba(48, 58, 47, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
        background-color: var(--hero-footer-background);
- }
-         
- .hero .title{  
+ }         
+ .hero__title{  
       font-weight: 900;
       font-size: 44px;
       line-height: 1.363;
@@ -185,8 +183,7 @@
       margin-bottom: 30px;                     
  }
  /* кнопка Заказать услугу */
-
- .but{      
+ .hero__but{      
       margin: 0 auto;
       font-family: Roboto;
       font-style: normal;
