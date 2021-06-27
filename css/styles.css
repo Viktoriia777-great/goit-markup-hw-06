@@ -138,20 +138,20 @@
       letter-spacing: 0.02em; 
       color: var(--main-text-color);       
  }
- .icon-mail{
+ .sait-nav__icon--mail{
      fill: currentColor;
      width: 16px;
      height: 12px;
      margin-right: 10px;    
  }     
- .icon-phone {
+ .sait-nav__icon--phone {
       width: 10px;
       height: 16px; 
       fill: currentColor;
       margin-right: 10px;
  }
- .connect:hover,
- .connect:focus{
+ .sait-nav__icon:hover,
+ .sait-nav__icon:focus{
     fill: var(--color-button-logo) ;          
  }  
  .link:hover, 
