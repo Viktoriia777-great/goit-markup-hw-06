@@ -12,6 +12,9 @@
   --box-shadow-btn: rgba(0, 0, 0, 0.15);
   --border-bottom-header: #ECECEC;
   --work-case: rgba(47, 48, 58, 0.8);
+  --team-scorecard-box-shadow1: rgba(0, 0, 0, 0.12);
+  --team-scorecard-box-shadow2: rgba(0, 0, 0, 0.14);
+  --team-scorecard-box-shadow3: rgba(0, 0, 0, 0.2);
       }       
   
  .html {
@@ -263,8 +266,7 @@
   .work__list{
      display: flex;
      justify-content: space-between;
- } 
- 
+ }  
  .work__box{
      position: relative; 
  }
@@ -278,7 +280,7 @@
       height: 70px;
       background: var(--work-case);
   }
- .title-case{
+ .work__title{
      font-weight: bold;
      font-size: 14px;
      line-height: 1.143;
@@ -287,30 +289,28 @@
      text-transform: uppercase;
      color: var(--white-color);
  }
-
   /* Команда */
-  .team{
-     
+  .team{     
       background: var(--team-filter-btn-bg);
       padding-top: 94px;
        padding-bottom: 94px; 
  }
- .list-item {
+ .team__list {
       display: flex;
       justify-content: space-between;
  } 
- .team-conteiner{
+ .team__conteiner{
       padding: 30px 32px;
  }
- .icons-card:not(:last-child){
+ .social__card:not(:last-child){
      margin-right: 10px;
 }
-  .team .scorecard{
+  .team__scorecard{
      background: var(--white-color);             
-     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+     box-shadow: 0px 1px 3px var(--team-scorecard-box-shadow1), 0px 1px 1px var(--team-scorecard-box-shadow2), 0px 2px 1px var(--team-scorecard-box-shadow3);
      border-radius: 0px 0px 4px 4px;     
  }
- .team-member{
+ .team__member{
       font-weight: 500;
       font-size: 16px;
       line-height: 1.188;       
@@ -318,7 +318,7 @@
       color: var(--main-color-headers);
       text-align: center;     
  }
- .team-text{
+ .team__text{
       font-weight: normal;
       font-size: 16px;
       line-height: 1.187;
@@ -326,13 +326,12 @@
       text-align: center;     
       margin-top: 10px;    
  }
- .icons-list{
-      
+ .social{      
        margin-top: 16px;       
       display: flex;
       justify-content: center;   
  }
-   .icons-card{      
+   .social__card{      
      display: flex;
      justify-content: center;
      align-items: center;     
@@ -419,7 +418,7 @@
       letter-spacing: 0.03em;
       margin-bottom: 20px;
  } 
- .social{     
+ .social__icon{     
      width: 20px;
      height: 20px;    
 }
