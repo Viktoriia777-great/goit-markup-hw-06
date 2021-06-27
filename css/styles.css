@@ -11,6 +11,7 @@
   --company-social-color: #AFB1B8;
   --box-shadow-btn: rgba(0, 0, 0, 0.15);
   --border-bottom-header: #ECECEC;
+  --work-case: rgba(47, 48, 58, 0.8);
       }       
   
  .html {
@@ -249,15 +250,25 @@
      padding-bottom: 94px; 
      padding-top: 94px; 
 }
-  .box-img{
+.work__title,
+.team__title{
+     font-weight: bold;
+     font-size: 36px;
+     line-height: 1.167;
+     text-align: center;
+     letter-spacing: 0.03em;
+     color: var(--main-color-headers);
+     margin-bottom: 50px;
+} 
+  .work__list{
      display: flex;
      justify-content: space-between;
  } 
  
- .box-case{
+ .work__box{
      position: relative; 
  }
- .case{
+ .work__case{
       position: absolute;
       display: flex; 
       justify-content: center;  
@@ -265,7 +276,7 @@
       bottom: 0;        
       width: 100%;
       height: 70px;
-      background: rgba(47, 48, 58, 0.8);
+      background: var(--work-case);
   }
  .title-case{
      font-weight: bold;
@@ -287,15 +298,6 @@
  .list-item {
       display: flex;
       justify-content: space-between;
- }
- .title{
-      font-weight: bold;
-      font-size: 36px;
-      line-height: 1.167;
-      text-align: center;
-      letter-spacing: 0.03em;
-      color: var(--main-color-headers);
-      margin-bottom: 50px;
  } 
  .team-conteiner{
       padding: 30px 32px;
