@@ -6,7 +6,7 @@
   --color-button-logo: #2196F3;
   --hero-footer-background: #2f303a; 
   --footer-phone-mail: rgba(255, 255, 255, 0.6);
-  --color-studio: #0000;
+  --color-studio: black;
   --card-content-border:  #EEEEEE;
   --company-social-color: #AFB1B8;
   --box-shadow-btn: rgba(0, 0, 0, 0.15);
@@ -97,14 +97,14 @@
  }
  /* Logo */ 
  .sait-nav__logo
- {
+  {
      font-family: Raleway;
      font-weight: bold;
      font-size: 26px;
      line-height: 1.192;
-     color: var(--main-color-headers);
+     /* color: var(--main-color-headers); */
      text-decoration: none;
-     color: #0000; 
+     color: var(--color-studio); 
      width: 145px;     
 }
 .sait-nav__logo--web,
@@ -408,6 +408,12 @@
      background: var(--hero-footer-background); 
  }
  .footer-nav__logo{
+     font-family: Raleway;
+     font-weight: bold;
+     font-size: 26px;
+     line-height: 1.192;    
+     text-decoration: none;    
+     width: 145px;   
      color: var(--white-color); 
  }
   .footer-nav{
@@ -434,21 +440,22 @@
      width: 20px;
      height: 20px;    
 }
- .social {
-    display: inline-flex;
+ .socialy {
+    display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
+    
  }
-.social__svg:hover,
-.social__svg:focus{
+.socialy__svg:hover,
+.socialy__svg:focus{
      fill: var(--white-color);
      background-color:var(--color-button-logo) ;  
 } 
-.social__list:not(:last-child){
+.socialy__list:not(:last-child){
      margin-right: 10px;
 }
-.social__svg{
+.socialy__svg{
       display: inline-flex;
      justify-content: center;
      align-items: center; 
@@ -459,9 +466,6 @@
     border-radius: 50%; 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }  
- .footer .logo{
-   color: var(--white-color);        
- }  
  .footer-nav__mail{
      font-weight: normal;
       font-size: 14px;
