@@ -23,6 +23,18 @@
   --border-modal-input: rgba(33, 33, 33, 0.2); 
   --modal-icon-fill: #212121;
   --modal-textarea-outline: rgba(33, 33, 33, 0.2);
+  --portfolio-btn-shadow1: rgba(0, 0, 0, 0.1);
+  --portfolio-btn-shadow2: rgba(0, 0, 0, 0.08);
+  --portfolio-btn-shadow3: rgba(0, 0, 0, 0.12);
+  --card-activ-shadow1: rgba(0, 0, 0, 0.12);
+  --card-activ-shadow2: rgba(0, 0, 0, 0.06);
+  --card-activ-shadow3: rgba(0, 0, 0, 0.16);
+  --card-box-bgr: rgba(33, 150, 243, 0.9);
+  --modal-bgr: rgba(0, 0, 0, 0.2);
+  --modal-tape-border: rgba(0, 0, 0, 0.1);
+  --subscribe-email-bgr: #2F303A;
+  --socialy-svg-bgr: rgba(153, 129, 129, 0.1);
+  --group-bgr: #F5F4FA;
       }       
   
  .html {
@@ -41,8 +53,7 @@
       box-sizing: border-box;      
       width: 1200px;
       margin: 0 auto;
-      padding: 0 15px;
-       /* outline: 2px solid tomato ;    */
+      padding: 0 15px;      
  }
  /* свойства body */
  body { 
@@ -105,8 +116,7 @@
      font-family: Raleway;
      font-weight: bold;
      font-size: 26px;
-     line-height: 1.192;
-     /* color: var(--main-color-headers); */
+     line-height: 1.192;    
      text-decoration: none;
      color: var(--color-studio); 
      width: 145px;     
@@ -232,10 +242,11 @@
      align-items: center; 
      width: 270px;
      height: 120px;
-     background: #F5F4FA;
+     background: var(--group-bgr);
       border-radius: 4px;
       margin-bottom: 30px;
 } 
+
  .feature__columns li:not(:last-child){
       margin-right: 30px;
  }  
@@ -448,8 +459,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
-    
+    margin-bottom: 100px;    
  }
 .socialy__svg:hover,
 .socialy__svg:focus{
@@ -461,15 +471,16 @@
 }
 .socialy__svg{
       display: inline-flex;
-     justify-content: center;
-     align-items: center; 
-     background-color: rgba(255, 255, 255, 0.1);
-     fill: var(--white-color);   
-     width: 44px;
-     height: 44px;   
-    border-radius: 50%; 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      justify-content: center;
+      align-items: center; 
+      background-color: var(--socialy-svg-bgr);
+      fill: var(--white-color);   
+      width: 44px;
+      height: 44px;   
+      border-radius: 50%; 
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }  
+
  .footer-nav__mail{
      font-weight: normal;
       font-size: 14px;
@@ -524,11 +535,17 @@
      height: 50px;
      margin-bottom: 94px;
      padding-left: 16px;
-     background-color: #2F303A;
+     background-color: var(--subscribe-email-bgr);
+     color: var(--white-color);
      outline: none;
      border: 1px solid var(--subscribe-email-border);
      box-shadow: var(--subscribe-email-shadow);
      border-radius: 4px;
+     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe__email:hover,
+.subscribe__email:focus {
+  border: 1px solid var(--color-button-logo);
 }
   .subscribe__btn{
       display: flex;
@@ -545,8 +562,9 @@
       color: var(--white-color);
       padding-left: 28px;
       margin-left: 12px;    
-      width: 200px;
-      height: 50px;     
+      min-width: 200px;
+      height: 50px; 
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);    
  }  
   .subscribe__icon{
      display: inline-flex; 
@@ -577,9 +595,9 @@
 .portfolio__btn:focus{
      background-color: var(--color-button-logo);
      color: var(--white-color);
-     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);   
+     box-shadow: 0px 3px 1px var(--portfolio-btn-shadow1), 0px 1px 2px var(--portfolio-btn-shadow2), 0px 2px 2px var(--portfolio-btn-shadow3);   
  } 
-
+ 
 /* Проекты */ 
 .portfolio {
        padding-top: 94px;
@@ -596,26 +614,25 @@
       display: flex;
       flex-wrap: wrap;
       margin-top: -30px;
-      margin-left: -30px; 
-       /* outline: 1px solid rgb(71, 255, 117);  */
+      margin-left: -30px;       
  } 
- .projekt-choice{
+ .projekt__choice{
        flex-basis: calc((100% - 90px) / 3);
       margin-left: 30px;
       margin-top: 30px;
-       /* outline: 1px solid blue;  */
  }
-.card-content{
+.content{
+      text-decoration: none;  
       padding: 20px 24px;
       background-color: var(--white-color);
      border: 1px solid var(--card-content-border);  
  }
-  .activ:hover,
- .activ:focus{
-     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-      
+  .card__activ:hover,
+ .card__activ:focus{
+     box-shadow: 0px 1px 1px var(--card-activ-shadow1), 0px 4px 4px var(--card-activ-shadow2), 1px 4px 6px var(--card-activ-shadow3);     
  }
- .portfolio-item{
+ 
+ .content__item{
       font-weight: bold;
       font-size: 18px;
       line-height: 2.000;
@@ -623,7 +640,7 @@
       color: var(--main-color-headers);
       text-decoration: none;
  }
- .portfolio-text{
+ .content__text{
       font-weight: normal;
       font-size: 16px;
       line-height: 1.875;      
@@ -632,14 +649,11 @@
       margin-top: 4px;
       text-decoration: none;
  } 
- .card-content{
-     text-decoration: none;  
- }  
- .card-thumb{
+ .card__thumb{
       position: relative;
       overflow: hidden;      
  }
- .card-box{ 
+ .card__box{ 
      position: absolute;
      width: 100%;
       height: 100%;
@@ -647,16 +661,16 @@
       left: 0;      
       width: 370px;
       height: 294px;
-      background: rgba(33, 150, 243, 0.9);
-      overflow: auto;
-    
+      background: var(--card-box-bgr);
+      overflow: auto;    
       transform: translateY(100%);  
       transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);   
  }
- .card:hover .card-box{
+
+ .card:hover .card__box{
      transform: translateY(0);
  }
- .card-text{      
+ .card__text{      
       font-size: 18px;
       line-height: 1.555; 
       letter-spacing: 0.03em;
@@ -667,16 +681,15 @@
  .modal{
       position: fixed;
        top: 0;
-      left: 0; 
-          
+      left: 0;           
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.2);
+      background: var(--modal-bgr);
  }
+
  .modal.is-hidden{
       opacity: 0;
-      pointer-events: none;
-      
+      pointer-events: none;      
  }
  .modal__content{      
      position: absolute;
@@ -702,21 +715,24 @@
      width: 30px;
      height: 30px;
      border-radius: 50%;
-     border: 1px solid rgba(0, 0, 0, 0.1);
+     border: 1px solid var(--modal-tape-border);
      cursor: pointer;
      background-color: var(--white-color);
- }
+ } 
  .modal__tape:hover,
  .modal__tape:focus{
       border-color: var(--color-button-logo);
       color: var(--color-button-logo);      
  }
  .is-hidden {
-     visibility: hidden;
+     visibility: inherit;
      opacity: 0;
      pointer-events: none;
-     transition: opacity 3000ms cubic-bezier(0.4, 0, 0.2, 1), visibility 5000ms cubic-bezier(0.4, 0, 0.2, 1);
+     transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
  }
+  .modal{
+     transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+   } 
 /*  FORM MODAL*/
 .modal__group{
      position: relative;
@@ -734,8 +750,7 @@
      font-size: 20px;
      line-height: 1.150;
      letter-spacing: 0.03em;
-     text-align: center;
-     
+     text-align: center;     
      margin-bottom: 12px;
      color: var(--main-color-headers);
  }
@@ -815,8 +830,7 @@
 } 
 .modal__consent{
       display: flex; 
-     align-items: center;
-     
+     align-items: center;     
      font-size: 14px;
      line-height: 1.71;
      color: var(--main-text-color);
