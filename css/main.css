@@ -16,7 +16,7 @@
 /* свойства контейнера */
 .conteiner {
   box-sizing: border-box;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -222,7 +222,7 @@ img {
 
 /* особенности  section class="feature-group"*/
 .feature {
-  padding-top: 94px;
+  padding-top: 60px;
 }
 
 .group__icon {
@@ -230,11 +230,11 @@ img {
   height: 70px;
 }
 
-.gpoup {
+.group {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  width: 100%;
   height: 120px;
   background: #F5F4FA;
   border-radius: 4px;
@@ -242,15 +242,16 @@ img {
 }
 
 .feature__columns {
-  display: flex;
+  margin-bottom: -30px;
 }
-.feature__columns li:not(:last-child) {
-  margin-right: 30px;
+.feature__columns .feature__item {
+  margin-bottom: 30px;
 }
 
 .feature__title {
   font-weight: bold;
   font-size: 14px;
+  text-align: center;
   line-height: 1.172;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -259,7 +260,7 @@ img {
 }
 
 .feature__text {
-  width: 270px;
+  width: 100%;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.714;
