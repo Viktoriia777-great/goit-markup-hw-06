@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>   
+    <title>Document</title>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+   
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
     <link rel="stylesheet" href="./css/main.min.css">
 </head > 
 <body>
@@ -18,7 +19,7 @@
               <a href="./index.html" class="sait-nav__logo"><span class="sait-nav__logo--web">Web</span>Studio</a>                 
           <ul class="sait-nav__navigation">
               <li>
-                  <a href="./index.html" class="sait-nav__link--active link">Студия</a>
+                  <a href="./index.html" class="sait-nav--active link">Студия</a>
               </li>                 
               <li>
                   <a href="./portfolio.html" class="sait-nav__link link">Портфолио</a>
@@ -60,7 +61,7 @@
               <!-- <h2></h2> -->            
               <ul class="feature__columns">               
                   <li>
-                    <div class="gpoup">
+                    <div class="group">
                       <svg class="group__icon">
                         <use href="./images/icon/sprite.svg#icon-group1" ></use>
                       </svg>
@@ -69,7 +70,7 @@
                       <p class="feature__text">Идейные  соображения, а также начало повседневной работы по формированию позиции.</p>
                   </li>
                   <li>
-                    <div class="gpoup">
+                    <div class="group">
                       <svg class="group__icon">
                         <use href="./images/icon/sprite.svg#icon-group2" ></use>
                       </svg>
@@ -78,7 +79,7 @@
                       <p class="feature__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                   </li>
                   <li>
-                    <div class="gpoup">
+                    <div class="group">
                       <svg class="group__icon">
                         <use href="./images/icon/sprite.svg#icon-group3" ></use>
                       </svg>
@@ -87,7 +88,7 @@
                       <p class="feature__text" >Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                   </li>
                   <li>
-                    <div class="gpoup">
+                    <div class="group">
                       <svg class="group__icon">
                         <use href="./images/icon/sprite.svg#icon-group4" ></use>
                       </svg>
@@ -107,7 +108,7 @@
                     <div class="work__box">
                       <img src="./images/box1.jpg" alt="планирование" width="370">
                       <div class="work__case">
-                        <h3 class="title-case">Десктопные приложения</h3>
+                        <h3 class="work__text">Десктопные приложения</h3>
                       </div>
                     </div>
                   </li>
@@ -115,7 +116,7 @@
                     <div class="work__box">
                       <img src="./images/box2.jpg" alt="современные технологии" width="370">
                       <div class="work__case">
-                      <h3 class="title-case">Мобильные приложения</h3>
+                      <h3 class="work__text">Мобильные приложения</h3>
                       </div>
                     </div>
                   </li>
@@ -123,7 +124,7 @@
                     <div class="work__box">        
                       <img src="./images/box3.jpg" alt="дизайн" width="370">
                       <div class="work__case">
-                      <h3 class="work__title">Дизайнерские решения</h3>
+                      <h3 class="work__text">Дизайнерские решения</h3>
                       </div>
                     </div>
                   </li>
@@ -291,42 +292,42 @@
                 <div class="conteiner">                 
                   <h2 class="client__title">Постоянные клиенты</h2>
                   <ul class="client-list">
-                    <li class="client-list__company">
+                    <li class="client-list--company">
                     <a href="#" class="client-list__link">
                         <svg class="client-list__icon">
                           <use href="./images/icon/sprite.svg#icon-company1"></use>
                         </svg>
                     </a>
                     </li>
-                    <li class="client-list__company">
+                    <li class="client-list--company">
                       <a href="#" class="client-list__link">
                         <svg class="client-list__icon">
                           <use href="./images/icon/sprite.svg#icon-company2"></use>
                         </svg>
                     </a>
                     </li>
-                    <li class="client-list__company">
+                    <li class="client-list--company">
                       <a href="#" class="client-list__link">
                         <svg class="client-list__icon">
                           <use href="./images/icon/sprite.svg#icon-company3"></use>
                         </svg>
                     </a>
                     </li>
-                    <li class="client-list__company">
+                    <li class="client-list--company">
                       <a href="#" class="client-list__link">
                         <svg class="client-list__icon">
                           <use href="./images/icon/sprite.svg#icon-company4"></use>
                         </svg>
                     </a>
                     </li>
-                    <li class="client-list__company">
+                    <li class="client-list--company">
                       <a href="#" class="client-list__link">
                         <svg class="client-list__icon">
                           <use href="./images/icon/sprite.svg#icon-company5"></use>
                         </svg>
                     </a>
                     </li> 
-                    <li class="client-list__company">
+                    <li class="client-list--company">
                       <a href="#" class="client-list__link">
                         <svg class="client-list__icon">
                           <use href="./images/icon/sprite.svg#icon-company6"></use>
@@ -358,28 +359,28 @@
           <div class="footer-join">   
             <h3 class="footer-join__title">присоединяйтесь</h3>
             <ul class="socialy">
-              <li class="socialy__list">            
+              <li class="socialy--list">            
               <a href="#" class="socialy__svg">
               <svg class="social__icon">
                 <use href="./images/icon/sprite.svg#icon-instagram"></use>
               </svg>
               </a>          
               </li>
-              <li class="socialy__list"> 
+              <li class="socialy--list"> 
               <a href="#" class="socialy__svg">
               <svg class="social__icon">
                 <use href="./images/icon/sprite.svg#icon-twitter"></use>
               </svg>  
               </a>
               </li>
-              <li class="socialy__list"> 
+              <li class="socialy--list"> 
               <a href="#" class="socialy__svg">
               <svg class="social__icon">
                 <use href="./images/icon/sprite.svg#icon-facebook"></use>
               </svg>  
               </a>
               </li>
-              <li class="socialy__list"> 
+              <li class="socialy--list"> 
               <a href="#" class="socialy__svg">               
                 <svg class="social__icon">
                 <use href="./images/icon/sprite.svg#icon-linkedin"></use>
@@ -411,7 +412,7 @@
    <div class="modal is-hidden" data-modal>
    <div class="modal__content">
       <button data-modal-close class="modal__tape">        
-      <svg class="modal__icon--close">
+      <svg class="modal__tape--close">
         <use href="./images/icon/sprite.svg#icon-close"></use>
       </svg>    
        </button>
