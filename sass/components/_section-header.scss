@@ -10,9 +10,10 @@
     align-items: center;
 }
 .sait-nav__navigation{
-     display: flex; 
-     align-items: center;      
-     margin-left: 93px;
+    display: none;
+    //  display: flex; 
+    //  align-items: center;      
+    //  margin-left: 93px;
 }
 .sait-nav__navigation li:not(:last-child){
     margin-right: 50px;
@@ -41,9 +42,10 @@
 }
 
 .sait-nav__contacts{
-    display: flex;
-    align-items: center;     
-     margin-left: auto;     
+    display: none;
+    // display: flex;
+    // align-items: center;     
+    //  margin-left: auto;     
 }
 .sait-nav__contacts li:not(:last-child){
     margin-right: 30px; } 

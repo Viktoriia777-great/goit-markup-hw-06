@@ -85,6 +85,8 @@ img {
   text-decoration: none;
   color: black;
   width: 145px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .sait-nav__logo--web,
@@ -117,9 +119,7 @@ img {
 }
 
 .sait-nav__navigation {
-  display: flex;
-  align-items: center;
-  margin-left: 93px;
+  display: none;
 }
 
 .sait-nav__navigation li:not(:last-child) {
@@ -148,9 +148,7 @@ img {
 }
 
 .sait-nav__contacts {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
+  display: none;
 }
 
 .sait-nav__contacts li:not(:last-child) {
