@@ -959,10 +959,14 @@ img {
   width: 100vw;
   height: 100vh;
 }
-.menu-container .conteiner {
+.menu-container .conteiner-mobile {
   position: relative;
   padding-top: 48px;
   padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
 }
 .menu-container .menu-toggle {
   position: absolute;
@@ -998,11 +1002,6 @@ img {
   font-size: 5vw;
 }
 
-.mobale-connektion {
-  position: fixed;
-  bottom: 48px;
-}
-
 .mobail-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -1011,4 +1010,8 @@ img {
   font-size: 40px;
   line-height: 1.175;
   letter-spacing: 0.02em;
+}
+
+.mobale-contakt__item:not(:last-child) {
+  margin-bottom: 32px;
 }/*# sourceMappingURL=main.css.map */
