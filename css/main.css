@@ -56,8 +56,6 @@ address {
 }
 
 .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -158,6 +156,8 @@ img {
 
 .sait-nav__mail,
 .sait-nav__phone {
+  padding-top: 32px;
+  padding-bottom: 32px;
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -972,10 +972,12 @@ img {
 
 .mobale-social__list {
   display: flex;
-  justify-content: flex-start;
-  margin-top: 64px;
+  justify-content: start;
+  padding-top: 64px;
+  margin-left: auto;
 }
 .mobale-social__list .mobale-social__link {
+  font-size: 3.2vw;
   border-right: 2px solid rgba(33, 33, 33, 0.2);
   padding-top: 0;
   padding-bottom: 0;
@@ -989,8 +991,29 @@ img {
 .mobale-contakt__list {
   padding-left: 10px;
 }
+.mobale-contakt__list .mobale-contakt__phone {
+  font-size: 8vw;
+}
+.mobale-contakt__list .mobale-contakt__mail {
+  font-size: 5vw;
+}
 
 .mobale-connektion {
   position: fixed;
   bottom: 48px;
+}
+
+.mobail-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobail-menu__link {
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+}
+
+.mobail-menu__item:hover,
+.mobail-menu__item:focus {
+  color: #2196F3;
 }/*# sourceMappingURL=main.css.map */
