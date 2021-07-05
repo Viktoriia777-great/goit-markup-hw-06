@@ -109,13 +109,14 @@ img {
   align-items: center;
 }
 
-.header {
-  border-bottom: 1px solid #ECECEC;
-}
-
-.header .conteiner {
+.main-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  border-bottom: 1px solid #ECECEC;
 }
 
 .sait-nav__navigation {
@@ -949,4 +950,47 @@ img {
 .modal__button--wrapper {
   display: flex;
   justify-content: center;
+}
+
+.menu-container {
+  position: absolute;
+  background-color: white;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.menu-container .conteiner {
+  position: relative;
+  padding-top: 48px;
+  padding-left: 40px;
+}
+.menu-container .menu-toggle {
+  position: absolute;
+  right: 25px;
+  top: 21px;
+}
+
+.mobale-social__list {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 64px;
+}
+.mobale-social__list .mobale-social__link {
+  border-right: 2px solid rgba(33, 33, 33, 0.2);
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.mobale-social__list .mobale-social__link:hover, .mobale-social__list .mobale-social__link:focus {
+  color: #2196F3;
+}
+
+.mobale-contakt__list {
+  padding-left: 10px;
+}
+
+.mobale-connektion {
+  position: fixed;
+  bottom: 48px;
 }/*# sourceMappingURL=main.css.map */
