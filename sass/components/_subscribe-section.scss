@@ -1,6 +1,7 @@
  /* Подпишись на рассылку */
  .subscribe{
     display: flex;
+    
     width: 100%;
 //     justify-content: center; 
  
@@ -8,14 +9,15 @@
      flex-direction: column;
      // margin-left: 93px;      
 }
-// .subscribe__label{
-     
-//      display: flex;
-//      justify-content: space-between;     
-// }
+.subscribe__label{
+     width: 100%;
+     display: flex;
+    //  justify-content: space-between;     
+}
 .subscribe__title{
     margin-bottom: 20px;
-    text-align: left;
+    // text-align: left;
+    text-align: center;
    align-self: start;
    font-weight: $font-weight-bold;
    font-size: $font-size-text;
@@ -25,7 +27,8 @@
 }
 .subscribe__email{
     display: flex;
-    width: 100%;
+    
+    width: 90vw;
     height: 50px;
 //     margin-bottom: 94px;
 margin-bottom: 20px;

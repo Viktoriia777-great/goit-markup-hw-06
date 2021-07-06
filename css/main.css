@@ -577,9 +577,14 @@ img {
   flex-direction: column;
 }
 
+.subscribe__label {
+  width: 100%;
+  display: flex;
+}
+
 .subscribe__title {
   margin-bottom: 20px;
-  text-align: left;
+  text-align: center;
   align-self: start;
   font-weight: bold;
   font-size: 14px;
@@ -590,7 +595,7 @@ img {
 
 .subscribe__email {
   display: flex;
-  width: 100%;
+  width: 90vw;
   height: 50px;
   margin-bottom: 20px;
   padding-left: 16px;
