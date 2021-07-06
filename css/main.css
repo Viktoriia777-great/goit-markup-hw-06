@@ -968,7 +968,7 @@ img {
   justify-content: space-between;
   height: 90%;
 }
-.menu-container .menu-toggle {
+.menu-container .menu-close {
   position: absolute;
   right: 25px;
   top: 21px;
@@ -1014,4 +1014,9 @@ img {
 
 .mobale-contakt__item:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.menu-container.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }/*# sourceMappingURL=main.css.map */
