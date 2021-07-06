@@ -1,6 +1,6 @@
-.footer .conteiner{ 
+.footer { 
     display: flex; 
-     
+    flex-wrap: wrap; 
     align-items: baseline;     
     padding-top: 60px;          
 }
@@ -10,8 +10,13 @@
 .footer-nav{
     display: flex;
     flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    
     width: 231px; 
-    margin-right: 70px;
+    // margin-right: 70px;
+
+    margin: 0 auto;
 } 
 .footer-nav__mail{
    font-weight: normal;
@@ -41,6 +46,7 @@
 margin-top: 9px;
 } 
 .footer-nav__link{
+    
     margin-bottom: 60px;
 }
    
