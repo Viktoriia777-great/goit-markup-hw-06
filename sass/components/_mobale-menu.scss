@@ -18,8 +18,20 @@
     }
     .menu-close{
         position: absolute;
-        right: 25px;
-        top: 21px;
+        right: 20px;
+        top: 12px;
+           
+    }
+}
+.menu-close,
+.menu-open{
+    border: none;
+    background-color: transparent;
+    outline: none;
+
+    &:hover,
+    &:focus{
+        fill: $color-button-logo;
     }
 }
 

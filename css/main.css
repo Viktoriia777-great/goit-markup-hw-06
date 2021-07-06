@@ -970,8 +970,20 @@ img {
 }
 .menu-container .menu-close {
   position: absolute;
-  right: 25px;
-  top: 21px;
+  right: 20px;
+  top: 12px;
+}
+
+.menu-close,
+.menu-open {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.menu-close:hover, .menu-close:focus,
+.menu-open:hover,
+.menu-open:focus {
+  fill: #2196F3;
 }
 
 .mobale-social__list {
