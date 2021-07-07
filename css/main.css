@@ -472,6 +472,12 @@ img {
   align-items: baseline;
   padding-top: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .footer .conteiner {
+    display: flex;
+    align-items: baseline;
+  }
+}
 
 .footer {
   background: #2f303a;
@@ -483,6 +489,18 @@ img {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .conteiner-nav {
+    flex-direction: row;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .conteiner-nav {
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+}
 
 .footer-nav {
   display: flex;
@@ -490,6 +508,22 @@ img {
   align-items: center;
   width: 231px;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .footer-nav {
+    margin-right: 165px;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 231px;
+    margin-right: 70px;
+    margin-left: 0;
+  }
 }
 
 .footer-nav__mail {
@@ -533,6 +567,17 @@ img {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .footer-join {
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-join {
+    justify-content: center;
+    margin-right: 0;
+  }
 }
 
 .footer-join__title {
@@ -579,16 +624,27 @@ img {
 /* Подпишись на рассылку */
 .subscribe {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-left: 93px;
+  }
+}
 
 .subscribe__label {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__label {
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 .subscribe__title {
@@ -600,6 +656,11 @@ img {
   line-height: 1.143;
   color: #FFFFFF;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__title {
+    text-align: left;
+  }
 }
 
 .subscribe__email {
@@ -618,6 +679,16 @@ img {
 }
 .subscribe__email:hover, .subscribe__email:focus {
   border: 1px solid #2196F3;
+}
+@media screen and (min-width: 768px) {
+  .subscribe__email {
+    width: 80vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__email {
+    width: 357px;
+  }
 }
 
 .subscribe__btn {
