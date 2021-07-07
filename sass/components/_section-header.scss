@@ -9,6 +9,13 @@
 }  
 .header{
    border-bottom: 1px solid $border-bottom-header;
+   
+   @media screen and (min-width: 768px){
+    .conteiner{
+        display: flex;
+         align-items: center;
+    }
+   }
 }  
 // .header .conteiner{
 //     display: flex;
@@ -19,6 +26,12 @@
     //  display: flex; 
     //  align-items: center;      
     //  margin-left: 93px;
+
+    @media screen and (min-width: 768px){
+          display: flex; 
+     align-items: center;      
+     margin-left: 93px;
+    }
 }
 .sait-nav__navigation li:not(:last-child){
     margin-right: 50px;
@@ -50,23 +63,40 @@
     display: none;
     // display: flex;
     // align-items: center;     
-    //  margin-left: auto;     
+    //  margin-left: auto; 
+    
+    @media screen and (min-width: 768px){
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+          align-items: flex-start;     
+         margin-left: 80px; 
+         padding-top: 21px;
+         padding-bottom: 21px;
+    }
 }
-.sait-nav__contacts li:not(:last-child){
-    margin-right: 30px; } 
+// .sait-nav__contacts li:not(:last-child){
+//     margin-right: 30px; } 
 
+.sait-nav__item:not(:last-child){
+    margin-bottom: 10px;
+    
+}
 .sait-nav__mail,
 .sait-nav__phone{
-    padding-top: 32px;
-   padding-bottom: 32px;   
+//     padding-top: 32px;
+//    padding-bottom: 32px;   
     display: flex;
     align-items: center;      
     font-weight: 500;
-    font-size: $font-size-text;
-    line-height: 1.142;
+    font-size: 12px;
+    line-height: 1.166;
     letter-spacing: 0.02em; 
-    color: $main-text-color;       
+    color: $main-text-color;   
+        
 }
+
+
 .sait-nav__icon--mail{
    fill: currentColor;
    width: 16px;

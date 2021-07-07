@@ -33,6 +33,9 @@
     &:focus{
         fill: $color-button-logo;
     }
+    @media screen and (min-width: 767px){
+        display: none;
+    }
 }
 
 .mobale-social__list{    
