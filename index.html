@@ -393,6 +393,7 @@
       <!-- Контакты --> 
       <footer class="footer"> 
       <div class="conteiner">
+        <div class="conteiner-nav">
         <div class="footer-nav">       
         <a href="./index.html" class="footer-nav__logo"><span class="footer-nav__logo--web">Web</span>Studio</a>                             
           <address class="footer-nav__address"> 
@@ -439,22 +440,22 @@
             </a>
               </li>
             </ul>         
-          </div>         
+          </div>  
+        </div>   
             <div class="subscribe">
                            
               <form >
                 <h3 class="subscribe__title">Подпишитесь на рассылку</h3>
                 <label class="subscribe__label">
                 <input type="email" name="email" class="subscribe__email" placeholder="E-mail">
-                
+                <button type="submit" class="subscribe__btn">Подписаться
+                  <svg class="subscribe__icon">
+                  <use href="./images/icon/sprite.svg#icon-send"></use>
+                </svg> 
+                </button>
               </label> 
-             
               </form>
-              <button type="submit" class="subscribe__btn">Подписаться
-                <svg class="subscribe__icon">
-                <use href="./images/icon/sprite.svg#icon-send"></use>
-              </svg> 
-              </button>
+              
               </div>          
       </div>                
     </footer>

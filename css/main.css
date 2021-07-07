@@ -477,6 +477,13 @@ img {
   background: #2f303a;
 }
 
+.conteiner-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer-nav {
   display: flex;
   flex-direction: column;
@@ -572,7 +579,6 @@ img {
 /* Подпишись на рассылку */
 .subscribe {
   display: flex;
-  width: 100%;
   align-items: center;
   flex-direction: column;
 }
@@ -580,6 +586,9 @@ img {
 .subscribe__label {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .subscribe__title {

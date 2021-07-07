@@ -7,6 +7,16 @@
 .footer{
    background: $hero-footer-background; 
 } 
+.conteiner-nav{
+    display: flex;
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and {
+        
+    }
+}
 .footer-nav{
     display: flex;
     flex-direction: column;
