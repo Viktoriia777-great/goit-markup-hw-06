@@ -11,7 +11,8 @@
 }
 /* свойства контейнера */
 .conteiner{  
-    box-sizing: border-box;      
+    box-sizing: border-box; 
+    outline: 1px solid tomato;     
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;  

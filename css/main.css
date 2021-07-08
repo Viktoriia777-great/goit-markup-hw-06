@@ -16,6 +16,7 @@
 /* свойства контейнера */
 .conteiner {
   box-sizing: border-box;
+  outline: 1px solid tomato;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
@@ -284,6 +285,7 @@ img {
 /* особенности  section class="feature-group"*/
 .feature {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .feature {
@@ -517,7 +519,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  padding-top: 60px;
 }
 @media screen and (min-width: 1200px) {
   .footer .conteiner {
@@ -535,6 +536,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .conteiner-nav {
