@@ -130,6 +130,11 @@ img {
   .sait-nav__navigation {
     display: flex;
     align-items: center;
+    margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sait-nav__navigation {
     margin-left: 93px;
   }
 }
@@ -141,6 +146,7 @@ img {
 .sait-nav--active {
   position: relative;
   color: #2196F3;
+  padding-bottom: 32px;
 }
 .sait-nav--active::after {
   position: absolute;
@@ -173,11 +179,30 @@ img {
     padding-bottom: 21px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .sait-nav__contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 
+@media screen and (min-width: 1200px) {
+  .sait-nav__contacts .sait-nav__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 .sait-nav__item:not(:last-child) {
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 1200px) {
+  .sait-nav__item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
 .sait-nav__mail,
 .sait-nav__phone {
   display: flex;

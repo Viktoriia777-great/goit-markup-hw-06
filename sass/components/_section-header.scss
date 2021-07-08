@@ -17,20 +17,18 @@
     }
    }
 }  
-// .header .conteiner{
-//     display: flex;
-//     align-items: center;
-// }
+
 .sait-nav__navigation{
     display: none;
-    //  display: flex; 
-    //  align-items: center;      
-    //  margin-left: 93px;
+    
 
     @media screen and (min-width: 768px){
           display: flex; 
-     align-items: center;      
-     margin-left: 93px;
+         align-items: center;      
+         margin-left: 88px;
+    }
+    @media screen and (min-width: 1200px){
+        margin-left: 93px;
     }
 }
 .sait-nav__navigation li:not(:last-child){
@@ -39,6 +37,7 @@
 .sait-nav--active {
     position: relative;
    color: $color-button-logo;
+   padding-bottom: 32px;
 
    &::after{
     position: absolute;
@@ -61,9 +60,7 @@
 
 .sait-nav__contacts{
     display: none;
-    // display: flex;
-    // align-items: center;     
-    //  margin-left: auto; 
+   
     
     @media screen and (min-width: 768px){
          display: flex;
@@ -74,18 +71,31 @@
          padding-top: 21px;
          padding-bottom: 21px;
     }
+    @media screen and (min-width: 1200px){
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+    }
 }
-// .sait-nav__contacts li:not(:last-child){
-//     margin-right: 30px; } 
+@media screen and (min-width: 1200px){
+.sait-nav__contacts .sait-nav__item:not(:last-child){
+    margin-right: 30px; } 
+}
+
 
 .sait-nav__item:not(:last-child){
     margin-bottom: 10px;
-    
+}
+@media screen and (min-width: 1200px){
+    .sait-nav__item:not(:last-child){
+        margin-bottom: 0px;
+    }
 }
 .sait-nav__mail,
 .sait-nav__phone{
-//     padding-top: 32px;
-//    padding-bottom: 32px;   
     display: flex;
     align-items: center;      
     font-weight: 500;
